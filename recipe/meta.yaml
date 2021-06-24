@@ -1,5 +1,5 @@
 {% set name = "types-futures" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/types-futures-{{ version }}.tar.gz
-  sha256: 96e39c1d0daabc169551ce377c5c8f4923906afccf530f0b0473cac3e2b81225
+  sha256: da372dd55dc08c257de1e3dfd56273e44af9668e077047b0509adcfc43dd2838
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
 
 test:
   commands:
-    - test -f $SP_DIR/concurrent-stubs/__init__.pyi
+    - test -f $SP_DIR/concurrent-python2-stubs/futures/__init__.pyi
 
 
 about:
