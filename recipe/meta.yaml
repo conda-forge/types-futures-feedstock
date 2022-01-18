@@ -1,5 +1,5 @@
 {% set name = "types-futures" %}
-{% set version = "3.3.2" %}
+{% set version = "3.3.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/types-futures-{{ version }}.tar.gz
-  sha256: f47bf00704ef8ff05726a7e86fcf0986de998992fbdd880986121baa8b7184bf
+  sha256: 1c1ea9af10e0c9cb957b9ac3310d108df9a886a72b5008a03ed61abe50373d4e
 
 build:
   number: 0
