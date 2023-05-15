@@ -31,9 +31,16 @@ test:
 
 about:
   home: https://github.com/python/typeshed
+  dev_url: https://github.com/python/typeshed
+  doc_url: https://typing.readthedocs.io/
   summary: Typing stubs for futures
+  description: |
+    This is a PEP 561 type stub package for the futures package. 
+    It can be used by type-checking tools like mypy, PyCharm, 
+    pytype etc. to check code that uses futures.
   license: Apache-2.0 AND MIT
   license_file: LICENSE
+  license_family: Apache
 
 extra:
   recipe-maintainers:
