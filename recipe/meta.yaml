@@ -25,8 +25,14 @@ requirements:
     - python
 
 test:
+  requires:
+    - pip
+  imports:
+    - concurrent.futures
   commands:
-    - test -f $SP_DIR/concurrent-python2-stubs/futures/__init__.pyi
+    - test -f $SP_DIR/concurrent-python2-stubs/futures/__init__.pyi  # [not win]
+    - if not exist %SP_DIR%\\concurrent-python2-stubs\\futures\\__init__.pyi exit 1 # [win]
+    - pip check
 
 
 about:
