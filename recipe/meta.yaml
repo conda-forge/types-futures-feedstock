@@ -12,17 +12,18 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   skip: true  # [py<36]
 
 requirements:
   host:
-    - pip
+    - pip >=3.6
     - python
     - setuptools
     - wheel
   run:
-    - python
+    - python >=3.6
 
 test:
   requires:
